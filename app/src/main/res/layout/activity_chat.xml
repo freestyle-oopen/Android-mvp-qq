@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/slidebar_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/send_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_weight="1"
+            android:imeOptions="actionSend"
+            android:hint="消 息"
+            android:maxLines="6"
+            android:theme="@style/MyEditText"/>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="@dimen/DIMEN_135PX"
+            android:layout_height="@dimen/DIMEN_68PX"
+            android:layout_gravity="bottom"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/sendmsg_but_selector"
+            android:enabled="false"
+            android:text="发 送"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

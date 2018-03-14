@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/index_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ease_show_head_toast_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="A"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <aiyagirl.nanchen.com.myapplication.view.Slidebar
+            android:id="@+id/slidebar"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+    </RelativeLayout>
+</LinearLayout>

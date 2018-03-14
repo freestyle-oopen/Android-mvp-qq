@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/DIMEN_10PX"
+        android:text="11月11日 20:45" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_70PX"
+            android:layout_height="@dimen/DIMEN_70PX"
+            android:layout_marginLeft="@dimen/DIMEN_9PX"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:src="@mipmap/avatar2" />
+
+        <TextView
+            android:id="@+id/message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/DIMEN_200PX"
+            android:background="@drawable/receive_msg_normal"
+            android:text="asdfasdfasdfni年度安东覅是阿萨德佛话撒地方阿萨德佛山打发都放假哎撒地方撒的佛还闪电发货扫地返回欧艾斯好地方啊山东覅哈斯的合法搜哈搜的hi发"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/header_layout"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/DIMEN_95PX">
+      <EditText
+          android:id="@+id/search_name"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:singleLine="true"
+          android:imeOptions="actionSearch"
+          android:layout_marginLeft="@dimen/DIMEN_10PX"
+          android:layout_marginRight="@dimen/DIMEN_80PX"
+          android:hint="搜索好友"/>
+      <ImageView
+          android:id="@+id/search_button"
+          android:layout_width="@dimen/DIMEN_90PX"
+          android:layout_height="@dimen/DIMEN_90PX"
+          android:layout_alignParentRight="true"
+          android:padding="@dimen/DIMEN_15PX"
+          android:src="@drawable/search_selector"/>
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/DIMEN_200PX"
+            android:visibility="gone"
+            android:src="@mipmap/nodata"/>
+    </RelativeLayout>
+</LinearLayout>
